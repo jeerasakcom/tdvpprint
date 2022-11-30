@@ -135,6 +135,7 @@ class _HomePageState extends State<HomePage> {
     return WillPopScope(
       onWillPop: _onWillPop,
       child: Scaffold(
+       /*
         key: scaffoldKey,
 
         appBar: AppBar(
@@ -237,8 +238,8 @@ class _HomePageState extends State<HomePage> {
             ],
           ),
         ),
-
-        /*
+*/
+        
         appBar: AppBar(
           backgroundColor: const Color(0xff81d4fa),
           title: Text(
@@ -267,9 +268,6 @@ class _HomePageState extends State<HomePage> {
             onPressed: () {},
           ),
         ),
-        
-
-*/
 
         //
         body: Container(
