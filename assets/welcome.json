@@ -1,0 +1,261 @@
+{
+  "id": "8307b998-eac4-4165-ab75-c67426cf6e90",
+  "name": "Default Welcome Intent",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [],
+  "contexts": [],
+  "endInteraction": true,
+  "events": [
+    {
+      "name": "WELCOME"
+    }
+  ],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": null,
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": [
+            "สวัสดีครับ ผม TDVPPrinting Chatbot พร้อมให้บริการครับ ยินดีต้อนรับสู่ Chatbot ของโรงพิมพ์อาสารักษาดินแดนครับ สามารถสอบถามข้อมูลเพิ่มเติมได้โดยตรงกับศูนย์บริการลูกค้า 02-012-4710 ครับ"
+          ]
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": null,
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "ถาม",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "3825cef5-6366-4b9a-ae1a-41c83353e220",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "สอบถาม",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "a936bcf5-9a1d-4958-b059-714c5525abcc",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "ทักครับ",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "b35f3400-2b1f-49f9-97f6-729624dfc896",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "สวัสดีครับ",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "11aef848-5cbb-4c15-b9ba-aaa79827b8fc",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "สอบถามข้อมูล",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "523a6e3d-ba49-4d70-b87b-afc9c878088f",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "howdy",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "a325b2bb-a4af-4ec0-b1b1-a80c9869d5e7",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "hey there",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "654ad1c5-92b2-4cdd-a5b8-2cc40d8264d9",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "hi there",
+          "userDefined": false
+        }
+      ],
+      "count": 1,
+      "id": "94b68451-5ceb-483e-a303-069e54e73a15",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "greetings",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "66d28362-0472-474a-bbc6-aa7da9b01792",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "hey",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "3206ea21-2e76-468b-9ce9-993b385defd0",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "long time no see",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "328026c9-f463-4a08-bd47-44485714e834",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "hello",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "35f2d723-b72f-4fe2-a7f5-be8b76b93f9a",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "lovely day isn't it",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "bed081ce-8994-44d7-a56c-0f3645a15854",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "I greet you",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "95b0abc9-4584-4b9f-9772-a65f39012c69",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "hello again",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "16843558-187f-4473-bddf-ec7b8d338350",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "hi",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "7dfe8f98-62e6-42d1-b544-1ec0733a2af7",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "hello there",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "9402f31d-a3bf-4526-a28d-9bb2c16760a3",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "a good day",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "add35500-b188-40b5-a469-d4c73f05a2af",
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": false
+}
