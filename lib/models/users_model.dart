@@ -76,7 +76,8 @@ class UserModel {
       'phone': phone,
       'email': email,
       'password': password,
-      'token' : token,
+      'images': images,
+      'token': token,
     };
   }
 
@@ -96,7 +97,7 @@ class UserModel {
       email: map['email'],
       password: map['password'],
       images: map['images'],
-      token:  map['token'],
+      token: map['token'],
     );
   }
 

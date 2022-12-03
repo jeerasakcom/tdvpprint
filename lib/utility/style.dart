@@ -1,20 +1,21 @@
 import 'package:flutter/material.dart';
 
-
-
 class StyleProjects {
   // base color
   Color darkColor = const Color(0xff0659b4);
   Color primaryColor = const Color(0xff1461e7);
-  Color baseColor = const Color(0xff104db8); //e7effc);
+  Color baseColor = const Color(0xff104db8);
   Color backgroundState = const Color.fromARGB(255, 0, 52, 163);
   Color lightColor = const Color.fromARGB(255, 80, 156, 255);
-  Color mainbutton = const Color.fromARGB(255, 130, 201, 255);
+  Color buttona = const Color.fromARGB(255, 130, 201, 255);
+  Color buttonb = const Color(0xffe6f8ff);
+  Color cardcolor = const Color(0xffb3e5fc);
+  Color alertblock = const Color.fromARGB(255, 255, 222, 222);
 
   // img
-  static String logo = 'assets/images/base/logo.png';
+  static String logo = 'assets/images/logo.png';
 
-  static String avatar = 'assets/images/base/avatar.png';
+  static String avatar = 'assets/images/avatar.png';
 
   // Topic
   TextStyle topicstyle1 = const TextStyle(
@@ -167,6 +168,33 @@ class StyleProjects {
     );
   }
 
+  Container header3() {
+    return Container(
+      height: 50,
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: <Widget>[
+          const Image(
+            image: AssetImage('assets/images/logo.png'),
+          ),
+          StyleProjects().boxwidth1,
+          const Center(
+            child: Text(
+              'โรงพิมพ์อาสารักษาดินแดน กรมการปกครอง\n'
+              'Territorial Defence Volunteers Printing',
+              style: TextStyle(
+                fontFamily: 'THSarabunNew',
+                fontSize: 16,
+                fontWeight: FontWeight.bold,
+                color: Color(0xffffda7a),
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+
   // alert
   TextStyle alertstyle1 = const TextStyle(
     fontFamily: 'THSarabunNew',
@@ -189,7 +217,6 @@ class StyleProjects {
     color: Color(0xFFFC0022),
   );
 
- 
   StyleProjects();
   //
 }

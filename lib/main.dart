@@ -4,8 +4,13 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:tdvpprint/components/backend/admin/admin/create_admin.dart';
+import 'package:tdvpprint/components/backend/admin/admin/lists_admin.dart';
 import 'package:tdvpprint/components/frontend/guest/home/homepage.dart';
 import 'package:tdvpprint/utility/style.dart';
+
+
+
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -30,6 +35,7 @@ class MyApp extends StatelessWidget {
           visualDensity: VisualDensity.adaptivePlatformDensity,
           scaffoldBackgroundColor: Colors.white),
       home: const SplashPage(),
+      //const ListAdminPage(),
     );
   }
 }

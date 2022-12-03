@@ -4,6 +4,7 @@ import 'package:carousel_pro/carousel_pro.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:tdvpprint/components/frontend/guest/authentication/authentication.dart';
 import 'package:tdvpprint/components/frontend/guest/calendar/calendarpage.dart';
 import 'package:tdvpprint/components/frontend/guest/communication/communication.dart';
 import 'package:tdvpprint/components/frontend/guest/corporation/corporation.dart';
@@ -25,7 +26,7 @@ class _HomePageState extends State<HomePage> {
     return await showDialog(
         context: context,
         builder: (context) => AlertDialog(
-              backgroundColor: const Color(0xffe6f8ff), //03a7dd),
+              backgroundColor: StyleProjects().buttonb,
               title: Text(
                 'Exit',
                 style: StyleProjects().alertstyle1,
@@ -257,7 +258,7 @@ class _HomePageState extends State<HomePage> {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => const RegisterPage(),
+                    builder: (context) => AuthenticationPage(),
                   ),
                 );
               },
@@ -311,8 +312,7 @@ class _HomePageState extends State<HomePage> {
 
       child: Card(
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
-        //color: const Color(0xff003a9f),
-        color: const Color(0xffb3e5fc),
+        color: StyleProjects().cardcolor,
         child: Center(
           child: Column(
             mainAxisSize: MainAxisSize.min,
