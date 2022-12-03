@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:tdvpprint/utility/style.dart';
 
 
 class ConfigText extends StatelessWidget {
