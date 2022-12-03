@@ -12,6 +12,11 @@ class StyleProjects {
   Color cardcolor = const Color(0xffb3e5fc);
   Color alertblock = const Color.fromARGB(255, 255, 222, 222);
 
+
+  // Route
+  static String routeHome = '/home';
+
+
   // img
   static String logo = 'assets/images/logo.png';
 

@@ -8,6 +8,7 @@ import 'package:tdvpprint/utility/config_avatar.dart';
 import 'package:tdvpprint/utility/config_progress.dart';
 import 'package:tdvpprint/utility/config_text.dart';
 import 'package:tdvpprint/utility/style.dart';
+import 'package:avatar_view/avatar_view.dart';
 
 class ReadProfilePage extends StatefulWidget {
   const ReadProfilePage({Key? key, required String uid}) : super(key: key);
@@ -136,11 +137,39 @@ class _ReadProfilePageState extends State<ReadProfilePage> {
 */
                     //
 
+                    AvatarView(
+                      radius: 80,
+                      borderWidth: 6,
+                      // borderColor: Colors.yellow,
+                      //borderColor: Color(0xff033674),
+                      borderColor: Color(0xfff8d800),
+                      //borderColor: Color.fromARGB(255, 182, 255, 173),
+                      avatarType: AvatarType.CIRCLE,
+                      backgroundColor: Colors.red,
+                      imagePath: userModel!.images!,
+                      placeHolder: Container(
+                        child: Icon(
+                          Icons.person,
+                          size: 50,
+                        ),
+                      ),
+                      errorWidget: Container(
+                        child: Icon(
+                          Icons.error,
+                          size: 50,
+                        ),
+                      ),
+                    ),
+
+
+/*
                     ConfigAvatar(
                       urlImage: userModel!.images!,
                       size: 75,
                     ),
 
+
+*/
                     //
                     StyleProjects().boxheight1,
                     blockDetail(head: 'ชื่อ :', value: userModel!.fname!),
@@ -253,9 +282,6 @@ class _ReadProfilePageState extends State<ReadProfilePage> {
             ),
     
     */
-   
-   
-   
     );
   }
 

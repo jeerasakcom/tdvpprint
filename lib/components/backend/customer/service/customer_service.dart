@@ -1,5 +1,4 @@
 import 'dart:async';
-import 'dart:io';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
@@ -9,6 +8,9 @@ import 'package:tdvpprint/components/backend/customer/profile/read_profile.dart'
 import 'package:tdvpprint/components/frontend/guest/authentication/authentication.dart';
 import 'package:tdvpprint/models/users_model.dart';
 import 'package:tdvpprint/utility/style.dart';
+
+
+
 
 class CustomerService extends StatefulWidget {
   const CustomerService({super.key});
@@ -22,6 +24,7 @@ class _CustomerServiceState extends State<CustomerService> {
   UserModel? userModel;
   Widget currentWidget = const CustomerOrdersPage();
   //CustomerProfilePage(uid: '',);
+  //const ReadProfilePage(uid: '',);
 
   @override
   void initState() {
@@ -122,6 +125,8 @@ class _CustomerServiceState extends State<CustomerService> {
               ),
             ),
             blockLogout(),
+           // ConfigLogout(),
+            
           ],
         ),
       ),
@@ -438,7 +443,6 @@ class _CustomerServiceState extends State<CustomerService> {
    
    */
 
-
 /*
       accountEmail: Row(
         children: [
@@ -682,12 +686,13 @@ class _CustomerServiceState extends State<CustomerService> {
                       style: StyleProjects().alertstyle2,
                     ),
                     actions: <Widget>[
-                      ElevatedButton(
+                      TextButton(
                         child: Text(
                           'ใช่',
                           style: StyleProjects().alertstyle2,
                         ),
                         onPressed: () async {
+                          
                           FirebaseAuth auth = FirebaseAuth.instance;
                           auth.signOut().then((res) {
                             Navigator.pushAndRemoveUntil(
@@ -696,9 +701,26 @@ class _CustomerServiceState extends State<CustomerService> {
                                     builder: (context) => AuthenticationPage()),
                                 (Route<dynamic> route) => false);
                           });
+
+                          
+
+                          //2
+                          /*
+                          FirebaseAuth.instance.signOut().then(
+                            (value) {
+                              Navigator.pushNamedAndRemoveUntil(context,
+                                  StyleProjects.routeHome, (route) => false);
+                            },
+                          );
+
+                          */
+
+                          
+
+                          //
                         },
                       ),
-                      ElevatedButton(
+                      TextButton(
                         child: Text(
                           'ไม่ใช่',
                           style: StyleProjects().alertstyle2,

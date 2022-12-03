@@ -32,6 +32,15 @@ dependencies:
 
   crypto: ^3.0.2
 
+  avatar_view: ^1.0.1
+
+  firebase_messaging_platform_interface: ^4.2.7
+  firebase_storage_platform_interface: ^4.1.24
+  cloud_functions_platform_interface: ^5.1.24
+  cloud_firestore_platform_interface: ^5.9.0
+  firebase_auth_platform_interface: ^6.11.3
+  firebase_database_platform_interface: ^0.2.2+14
+
   # connect db
   firebase_core: ^2.3.0
   firebase_auth: ^4.1.4

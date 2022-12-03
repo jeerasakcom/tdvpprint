@@ -19,6 +19,7 @@ class ConfigAvatar extends StatelessWidget {
 }
 
 
+/*
 class ConfigCircleAvatar extends StatelessWidget {
   final String path;
   final double? radius;
@@ -31,11 +32,12 @@ class ConfigCircleAvatar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      // width: 36,
-      // height: 36,
-      child: CircleAvatar(radius: radius ?? 25,
+      width: 75,
+      height: 75,
+      child: CircleAvatar(radius: radius ?? 75,
         backgroundImage: NetworkImage(path),
       ),
     );
   }
 }
+*/
