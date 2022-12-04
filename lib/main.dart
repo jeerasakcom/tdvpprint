@@ -14,6 +14,7 @@ import 'package:tdvpprint/utility/style.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
+  HttpOverrides.global = MyHttpOverride();
   await Firebase.initializeApp();
   await SharedPreferences.getInstance();
 
@@ -89,5 +90,15 @@ class _SplashPageState extends State<SplashPage> {
         ),
       ),
     );
+  }
+}
+
+
+
+class MyHttpOverride extends HttpOverrides {
+  @override
+  HttpClient createHttpClient(SecurityContext? context) {
+    return super.createHttpClient(context)
+      ..badCertificateCallback = (cert, host, port) => true;
   }
 }
